@@ -271,3 +271,22 @@ main h1 {
     width: 70%;
     top: 47%;
 }
+
+/* PROJECTS SECTION */
+.projects-section {
+    width: 100%;
+    margin-top: 10rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-section h3 {
+    margin-bottom: 5%;
+    font-size: 5rem;
+    background-image: linear-gradient(rgb(133, 133, 133), rgb(255, 255, 255));
+    color: transparent;
+    background-clip: text;
+}
