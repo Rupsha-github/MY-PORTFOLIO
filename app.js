@@ -12,7 +12,7 @@ document.querySelectorAll('.card').forEach(card => {
 
 
 //Form Handling
-document.getElementById('contactForm').addEventListener(submit, function(e) {
+document.getElementById('contactForm').addEventListener("submit", function(e) {
     e.preventDefault();
 
     //show success message
