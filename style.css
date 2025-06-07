@@ -290,3 +290,163 @@ main h1 {
     color: transparent;
     background-clip: text;
 }
+
+/* STYLING FOR SLIDER AND ITS ITEMS WILL GO HERE*/
+
+
+
+/* STYLING FOR CONTACT SECTION */
+.contact-section {
+    padding: 60px 0;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h3 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background-image: linear-gradient(rgb(133, 133, 133), rgb(255, 255, 255));
+    color: transparent;
+    background-clip: text;
+}
+
+.section-header p {
+    color: lightgray;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* CONTACT GRID */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.info-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card {
+    padding: 30px;
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    color: lightgray;
+}
+
+.contact-item {
+    margin-bottom: 3rem;
+}
+
+.contact-item p {
+    margin-bottom: 0.8rem;
+    color: #7ce9e6;
+}
+
+.contact-item a {
+    color: lightgray;
+    text-decoration: none;
+    transition: color 0.1s;
+}
+
+.contact-item a:hover {
+    color: #7ce9e6;
+}
+
+.social-link {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.social-link p {
+    margin-bottom: 15px;
+    color: #7ce9e6;
+    font-weight: 600;
+}
+
+.social-link a {
+    display: inline-block;
+    margin-right: 15px;
+    color: lightgray;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #2d2d2d;
+    border-radius: 6px;
+    transition: all 0.1s;
+}
+
+.social-link a:hover {
+    background-color: #7ce9e6;
+    color: #131314;
+}
+
+/* STYLING FOR THE FORM */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    color: lightgray;
+    font-size: 16px;
+    transition: border-color 0.1s;
+    border: 1px solid #333;
+}
+
+.form-control:focus {
+    outline: none;
+    color: #7ce9e6;
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.message-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(124, 233, 230, 0.1);
+    color: #7ce9e6;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.message-btn:hover {
+    background-color: #7ce9e6;
+    color: #131314;
+}
+
+.success-message {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: none;
+}
