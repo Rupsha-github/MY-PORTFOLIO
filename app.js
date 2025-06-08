@@ -38,11 +38,31 @@ document.querySelectorAll('.card').forEach(card => {
 //         document.getElementById('successMessage').style.display = 'none';
 //     }, 3000);
 // })
-document.getElementById('contactForm').addEventListener("submit", function() {
-    // Do not prevent default, let FormSubmit handle sending
-    document.getElementById('successMessage').style.display = 'block';
+document.getElementById('contactForm').addEventListener("submit", function(e) {
+    e.preventDefault();
 
-    setTimeout(function() {
-        document.getElementById('successMessage').style.display = 'none';
-    }, 3000);
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch("https://formsubmit.co/fd35f2c44a498515e2711de8ec98f57a", {
+        method: "POST",
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            document.getElementById('successMessage').style.display = 'block';
+            form.reset();
+            setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 3000);
+        } else {
+            alert("There was a problem sending your message. Please try again.");
+        }
+    })
+    .catch(error => {
+        alert("An error occurred. Please try again later.");
+    });
 });
