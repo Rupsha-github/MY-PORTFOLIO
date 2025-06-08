@@ -450,3 +450,45 @@ textarea.form-control {
     margin-top: 20px;
     display: none;
 }
+
+/* STYLING FOR FOOTER */
+ footer {
+    align-items: center;            /* Center horizontally */
+    text-align: center;             /* Center text */
+    display: flex;
+    flex-direction: column;         /* Stack content vertically */
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    margin-top: 5rem;
+    background-color: rgba(124, 233, 230, 0.1);
+    width: 100vw;              /* Force full viewport width */
+    margin-left: -3rem;        /* Offset the body's left padding */
+    margin-right: -3rem;       /* Offset the body's right padding */
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;     /* Align icons vertically */
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.github {
+  height: 60px;           
+  width: 50px;
+}
+.linkedin {
+    height: 48px;
+    width: 50px;
+}
+.gmail {
+    height: 48px;
+    width: 50px;
+}
+
+
+footer h3 img{
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
