@@ -196,14 +196,13 @@ main h1 {
 }
 
 /* CARD SPECIFIC AREAS */
-.intro {
-    grid-area: intro;
-    min-height: 450px;
+ .intro {
+    grid-column: 1 / -1;
+    min-height: 200px;
+    width: 100%;
+    justify-self: center;
 }
-.tech {
-    grid-area: tech;
-    min-height: 450px;
-}
+
 
 /* CARD HOVER EFFECTS */
 .card:hover {
@@ -235,17 +234,17 @@ main h1 {
 }
 
 .card-text, .passion-text {
-    color: #7b7b7b;
+    color: #bebaba;
     line-height: 1.6;
     margin-top: 2rem;
-    max-width: 30rem;
+    max-width: 50rem;
 }
 
 .bento-grid .background-img {
     position: absolute;
     inset: -1% -1% -1% -1%;
     width: 110%;
-    height: 110%;
+    height: 100%;
     object-fit: cover;
     z-index: -1;
 }
@@ -266,10 +265,10 @@ main h1 {
 
 .bento-grid .skills-group {
     position: absolute;
-    bottom: 5%;
-    left: 15%;
-    width: 70%;
-    top: 47%;
+    bottom: 55%;
+    left: 10%;
+    width: 60%;
+    top: -55%;
 }
 
 /* PROJECTS SECTION */
